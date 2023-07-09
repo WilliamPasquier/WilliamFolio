@@ -1,0 +1,127 @@
+/*Import fonts*/
+/*Montserrat Bold, Ubuntu Medium and Hind Medium*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap');
+
+/*Variable declaration*/
+:root {
+    --background: #fff5cd;
+    --background-second: #f2e3a8;
+    --background-line: #6f3e2d;
+    --font-color: #86965c;
+    --font-color-second: #5d6c3b;
+    --white-font: #f5f0f0;
+    --title-color: #314d2d;
+    --dark-color: #1a2c16;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Hind', 'Sans-serif';
+    color: var(--font-color-second);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: var(--background); */
+    background: linear-gradient(135deg, rgba(255,245,205,1) 0%, rgba(242,227,168,1) 100%);
+}
+
+h1 {
+    font-family: 'Ubuntu', 'Sans-serif';
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    padding: 0 60px;
+}
+
+#main-container h1 {
+    font-size: 3rem;
+}
+
+#main-container p {
+    font-size: 1.5rem;
+}
+
+#main-container #logo-img {
+    width: 150px;
+    height: 150px;
+}
+
+#main-container .info {
+    display: flex;
+}
+
+#main-container .entry_anim {
+    opacity: 0;
+}
+
+#main-container .info #text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    padding: 15px
+}
+
+#main-container .contact {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#main-container .contact a {
+    padding: 6px 12px;
+    border: solid 3px var(--font-color-second);
+    border-radius: 50px;
+}
+
+#main-container .contact a:hover {
+    transition: ease-in 0.1s;
+    color: var(--background);
+    background-color: var(--font-color-second);
+    border: solid 3px var(--font-color-second);
+}
+
+#main-container .contact a:active {
+    transition: ease-in 0.1s;
+    color: var(--background);
+    background-color: var(--dark-color);
+    border: solid 3px var(--dark-color);
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
