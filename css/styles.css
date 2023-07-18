@@ -124,7 +124,7 @@ main {
     border: solid 3px var(--eminence);
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
     #main-container {
         padding: 0 15px;
     }

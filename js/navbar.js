@@ -1,4 +1,11 @@
-window.addEventListener('DOMContentLoaded', () => {
+"use strict";
+
+var navEvents = () => {
+    burgerBtnDetection();
+    activeNavBtn();
+}
+
+var burgerBtnDetection = () => {
     const primaryNav = document.querySelector('.primary-nav');
     const navToggle = document.querySelector('.nav-toggle');
     
@@ -13,4 +20,20 @@ window.addEventListener('DOMContentLoaded', () => {
             navToggle.setAttribute('aria-expanded', false);
         }
     })
-})
+};
+
+var activeNavBtn = () => {
+    const btns = document.querySelectorAll('.link-btn');
+
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", (function(index) {
+            return function() {
+                var current = document.querySelector('.active');
+                if (current) {
+                    current.classList.remove("active");
+                }
+                btns[index].classList.add("active");
+            };
+        })(i));
+    }
+};

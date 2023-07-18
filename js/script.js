@@ -1,5 +1,13 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const elements = document.getElementsByClassName('entry_anim');
+"use strict";
+
+window.onload = () => {
+    navEvents();
+
+    entryAnimation();
+}
+
+var entryAnimation = () => {
+    const elements = document.querySelectorAll('.entry_anim');
     let index = 0;
 
     const interval = setInterval(() => {
@@ -12,4 +20,4 @@ window.addEventListener('DOMContentLoaded', () => {
             clearInterval(interval);
         }
     }, 400);
-});
+};
