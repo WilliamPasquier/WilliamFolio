@@ -21,7 +21,8 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Hind', 'Sans-serif';
-    color: var(--font-color-second);
+    /* color: var(--font-color-second); */
+    color: var(--snow);
 }
 
 html {
@@ -29,8 +30,8 @@ html {
 }
 
 body {
-    /* background-color: var(--background); */
-    background: linear-gradient(135deg, rgba(255,245,205,1) 0%, rgba(242,227,168,1) 100%);
+    /* background: linear-gradient(135deg, rgba(255,245,205,1) 0%, rgba(242,227,168,1) 100%); */
+    background: linear-gradient(135deg, rgba(48,35,58,1) 0%, rgba(28,23,50,1) 100%);
 }
 
 h1 {
@@ -67,6 +68,8 @@ main {
 
 #main-container .info {
     display: flex;
+    align-items: center;
+    padding: 15px;
 }
 
 #main-container .entry_anim {
@@ -85,28 +88,34 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    gap: 15px;
 }
 
 #main-container .contact a {
-    min-width: 180px;
+    min-width: 150px;
     padding: 6px 12px;
-    border: solid 3px var(--font-color-second);
+    /* border: solid 3px var(--font-color-second); */
+    border: solid 3px var(--amethyst);
     border-radius: 50px;
     text-align: center;
 }
 
 #main-container .contact a:hover {
     transition: ease-in 0.1s;
-    color: var(--background);
-    background-color: var(--font-color-second);
-    border: solid 3px var(--font-color-second);
+    /* color: var(--background); */
+    /* background-color: var(--font-color-second); */
+    background-color: var(--amethyst);
+    /* border: solid 3px var(--font-color-second); */
+    border: solid 3px var(--amethyst);
 }
 
 #main-container .contact a:active {
     transition: ease-in 0.1s;
-    color: var(--background);
-    background-color: var(--dark-color);
-    border: solid 3px var(--dark-color);
+    /* color: var(--background); */
+    /* background-color: var(--dark-color); */
+    background-color: var(--eminence);
+    /* border: solid 3px var(--dark-color); */
+    border: solid 3px var(--eminence);
 }
 
 @media only screen and (max-width: 620px) {
