@@ -1,0 +1,13 @@
+/* CSS HSL */
+:root {
+    --dark-purple: hsla(251, 37%, 14%, 1);
+    --dark-purple-2: hsla(274, 25%, 18%, 1);
+    --amethyst: hsla(272, 66%, 59%, 1);
+    --magnolia: hsla(270, 44%, 96%, 1);
+    --snow: hsla(280, 100%, 99%, 1);
+    --tomato: hsla(11, 99%, 60%, 1);
+    --folly: hsla(339, 98%, 50%, 1);
+    --purple-pizzazz: hsla(302, 76%, 63%, 1);
+    --steel-pink: hsla(295, 100%, 44%, 1);
+    --veronica: hsla(266, 94%, 60%, 1);
+}
