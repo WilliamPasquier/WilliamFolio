@@ -17,9 +17,6 @@
 *{
 	margin: 0;
 	padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
     font-family: 'Hind', 'Sans-serif';
     /* color: var(--font-color-second); */
     color: var(--snow);
@@ -44,6 +41,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-gap {
+    display: flex;
+    gap: var(--gap, 2rem);   
 }
 
 #main-container {
