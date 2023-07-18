@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav id="menu">
             <img src="./resources/images/XL_logo.png" id="logo-navbar">
             <div class="nav-links">
@@ -28,10 +28,57 @@
                     <li><a class="nav-link" href="#contact">Contact me</a></li>
                 </ul>
             </div>
+        </nav> 
+    </header>
+         -->
+    <header class="primary-header flex">
+        <div>
+            <img src="./resources/images/XL_logo.png" id="logo-navbar">
+        </div>
+        <nav>
+
+            <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                <!-- <span class="sr-only">Menu</span> -->
+            </button>
+
+            <ul class="primary-nav flex-gap" id="primary-nav" data-visible="false">
+                <li class="active">
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#who-am-i">Who am i ?</a>
+                </li>
+                <li>
+                    <a href="#my-skills">My skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact me</a>
+                </li>
+            </ul>
+            <!-- <button id="burger-button">
+                <svg id="burger-icon" data-name="burger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 50">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                            fill: #5d6c3b;
+                            }
+                        </style>
+                    </defs>
+                    <g>
+                        <rect class="cls-1" width="60" height="10" rx="2.5" ry="2.5"/>
+                        <rect class="cls-1" x="15" y="20" width="45" height="10" rx="2.5" ry="2.5"/>
+                        <rect class="cls-1" x="30" y="40" width="30" height="10" rx="2.5" ry="2.5"/>
+                    </g>
+                </svg>
+            </button> -->
         </nav>
     </header>
 
-    <main>    
+    <main>
+            
         <div id="main-container">
             <div class="info">
                 <img src="./resources/images/XL_logo_2_2.png" id="logo-img" class="entry_anim">
