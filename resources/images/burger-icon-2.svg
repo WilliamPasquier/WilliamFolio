@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5d6c3b;
+      }
+    </style>
+  </defs>
+  <g id="burger-icon">
+    <rect class="cls-1" width="60" height="10" rx="2.5" ry="2.5"/>
+    <rect class="cls-1" x="15" y="20" width="45" height="10" rx="2.5" ry="2.5"/>
+    <rect class="cls-1" x="30" y="40" width="30" height="10" rx="2.5" ry="2.5"/>
+  </g>
+</svg>

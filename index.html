@@ -8,16 +8,46 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
     <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/variables.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 </head>
 <body>
+    <header class="primary-header flex">
+        <div>
+            <img src="./resources/images/XL_logo_2_2.png" id="logo-navbar">
+        </div>
+        <nav>
+
+            <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                <!-- <span class="sr-only">Menu</span> -->
+            </button>
+
+            <ul class="primary-nav flex-gap" id="primary-nav" data-visible="false">
+                <li>
+                    <a class="link-btn active" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="link-btn" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="link-btn" href="#who-am-i">Who am i ?</a>
+                </li>
+                <li>
+                    <a class="link-btn" href="#my-skills">My skills</a>
+                </li>
+                <li>
+                    <a class="link-btn" href="#contact">Contact me</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
     <main>
-        <header>
             
-        </header>
-        
         <div id="main-container">
             <div class="info">
                 <img src="./resources/images/XL_logo_2_2.png" id="logo-img" class="entry_anim">
@@ -33,9 +63,10 @@
             </div>
         </div>
 
-        <footer>
-            
-        </footer>
     </main>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
