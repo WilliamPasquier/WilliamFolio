@@ -3,6 +3,8 @@
     max-height: 102px;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .primary-header #logo-navbar {
@@ -25,6 +27,15 @@
     font-size: 1rem;
 }
 
+.primary-nav .link-btn {
+    text-decoration: none;
+}
+
+.primary-nav .link-btn:hover {
+    color: var(--amethyst);
+    transition: color 350ms ease-out;
+}
+
 .primary-nav .active {
     color: var(--amethyst);
     font-weight: 700;
@@ -32,10 +43,6 @@
     text-underline-offset: 9px;
     text-decoration-thickness: 3px;
     text-decoration-color: var(--amethyst);
-}
-
-.primary-nav a{
-    text-decoration: none;
 }
 
 /*RESPONSIVENESS*/
