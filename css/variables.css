@@ -1,3 +1,7 @@
+/*Import fonts*/
+/*Montserrat Bold, Ubuntu Medium and Hind Medium*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap');
+
 /* CSS HSL */
 :root {
     --dark-purple: hsla(251, 37%, 14%, 1);
@@ -11,5 +15,8 @@
     --folly: hsla(339, 98%, 50%, 1);
     --purple-pizzazz: hsla(302, 76%, 63%, 1);
     --steel-pink: hsla(295, 100%, 44%, 1);
+    --steel-pink-2: hsla(295, 51%, 53%, 1);
+    --french-mauve: hsla(295, 47%, 60%, 1);
+    --plum-web: hsla(295, 49%, 75%, 1);
     --veronica: hsla(266, 94%, 60%, 1);
 }

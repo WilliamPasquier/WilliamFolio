@@ -1,25 +1,7 @@
-/*Import fonts*/
-/*Montserrat Bold, Ubuntu Medium and Hind Medium*/
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap');
-
-/*Variable declaration*/
-:root {
-    --background: #fff5cd;
-    --background-second: #f2e3a8;
-    --background-line: #6f3e2d;
-    --font-color: #86965c;
-    --font-color-second: #5d6c3b;
-    --white-font: #f5f0f0;
-    --title-color: #314d2d;
-    --dark-color: #1a2c16;
-}
-
 *{
 	margin: 0;
 	padding: 0;
     font-family: 'Hind', 'Sans-serif';
-    /* color: var(--font-color-second); */
-    color: var(--snow);
 }
 
 html {
@@ -27,20 +9,11 @@ html {
 }
 
 body {
-    /* background: linear-gradient(135deg, rgba(255,245,205,1) 0%, rgba(242,227,168,1) 100%); */
-    background: linear-gradient(135deg, rgba(48,35,58,1) 0%, rgba(28,23,50,1) 100%);
+    background-color: var(--dark-purple);
 }
 
 h1 {
     font-family: 'Ubuntu', 'Sans-serif';
-}
-
-main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex {
@@ -52,7 +25,35 @@ main {
     gap: var(--gap, 2rem);   
 }
 
-#main-container {
+main {
+    width: 100%;
+}
+
+.links {
+    color: var(--snow);
+    text-decoration: none;
+    font-size: 1.25rem;
+    border: 3px solid var(--amethyst);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+
+.start-button:hover {
+    background-color: var(--amethyst);
+    transition: ease-in 0.1s;
+}
+
+.start-button:active {
+    border: 3px solid var(--eminence);
+    background-color: var(--eminence);
+    transition: ease-in 0.1s;
+}
+
+/* section {
+    height: 100vh;
+} */
+
+/* #main-container {
     display: flex;
     flex-direction: column;
     align-items:  center;
@@ -100,7 +101,6 @@ main {
 #main-container .contact a {
     min-width: 150px;
     padding: 6px 12px;
-    /* border: solid 3px var(--font-color-second); */
     border: solid 3px var(--amethyst);
     border-radius: 50px;
     text-align: center;
@@ -108,19 +108,13 @@ main {
 
 #main-container .contact a:hover {
     transition: ease-in 0.1s;
-    /* color: var(--background); */
-    /* background-color: var(--font-color-second); */
     background-color: var(--amethyst);
-    /* border: solid 3px var(--font-color-second); */
     border: solid 3px var(--amethyst);
 }
 
 #main-container .contact a:active {
     transition: ease-in 0.1s;
-    /* color: var(--background); */
-    /* background-color: var(--dark-color); */
     background-color: var(--eminence);
-    /* border: solid 3px var(--dark-color); */
     border: solid 3px var(--eminence);
 }
 
@@ -174,4 +168,4 @@ main {
         opacity: 1;
         transform: translateY(0%);
     }
-}
+} */

@@ -2,8 +2,13 @@
 
 window.onload = () => {
     navEvents();
+    homeEvents();
 
     entryAnimation();
+}
+
+window.onresize = () => {
+    getScreenSize();
 }
 
 var entryAnimation = () => {

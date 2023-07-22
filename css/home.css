@@ -1,0 +1,129 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--snow);
+    background: linear-gradient(180deg, rgba(48,35,58,1) 0%, rgba(28,23,50,1) 100%);
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+}
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-container{
+    padding-bottom: 5rem;
+}
+
+.home-card {
+    width: 50rem;
+    height: 26.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    z-index: 1;
+    transform-style: preserve-3d;
+    transform: perspective(50px);
+
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.text-container {
+    transform: translateZ(20px);
+}
+
+.glass-effect {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.title-name {
+    color: var(--french-mauve);
+    font-size: 4.5rem;
+    margin-top: 1rem;
+}
+
+.title-text {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.work-text {
+    color: var(--plum-web);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.75rem;
+}
+
+.content-text {
+    font-size: 1.5rem;
+}
+
+/*RESPONSIVENESS*/
+/* Tablet device */
+@media (max-width: 960px) {
+    .home-card {
+        width: 30rem;
+        height: 13.125rem;
+    }
+
+    .glass-effect {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .home-card .card-logo {
+        display: none;
+    }
+
+    .title-name {
+        font-size: 3.5rem;
+    }
+    
+    .title-text {
+        font-size: 1.5rem;
+    }
+    
+    .content-text {
+        font-size: 1rem; 
+    }
+}
+
+/* Mobile device */
+@media (max-width: 640px) {
+    #home {
+        padding: 0 2rem;
+    }
+
+    .home-card {
+        width: 100%;
+        height: 13.125rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .glass-effect {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .title-name {
+        font-size: 3rem;
+    }
+    
+    .title-text {
+        font-size: 1rem;
+    }
+}
