@@ -9,6 +9,7 @@
     z-index: 9999;
 
     background-color: transparent;
+    transition: background-color 350ms ease-out;
 }
 
 .primary-header #logo-navbar {
@@ -39,15 +40,6 @@
 .primary-nav .link-btn:hover {
     color: var(--amethyst);
     transition: color 350ms ease-out;
-}
-
-.primary-nav .active {
-    color: var(--amethyst);
-    font-weight: 700;
-    text-decoration: underline;
-    text-underline-offset: 9px;
-    text-decoration-thickness: 3px;
-    text-decoration-color: var(--amethyst);
 }
 
 /*RESPONSIVENESS*/

@@ -12,6 +12,10 @@ window.onresize = () => {
     getScreenSize();
 }
 
+window.onscroll = () => {
+    changeNavbarOnScroll();
+}
+
 var entryAnimation = () => {
     const elements = document.querySelectorAll('.entry_anim');
     let index = 0;

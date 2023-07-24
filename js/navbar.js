@@ -2,7 +2,6 @@
 
 var navEvents = () => {
     burgerBtnDetection();
-    activeNavBtn();
 }
 
 var burgerBtnDetection = () => {
@@ -22,18 +21,13 @@ var burgerBtnDetection = () => {
     })
 };
 
-var activeNavBtn = () => {
-    const btns = document.querySelectorAll('.link-btn');
+var changeNavbarOnScroll = () => {
+    const navbar = document.querySelector('.primary-header');
 
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", (function(index) {
-            return function() {
-                var current = document.querySelector('.active');
-                if (current) {
-                    current.classList.remove("active");
-                }
-                btns[index].classList.add("active");
-            };
-        })(i));
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) { 
+        navbar.style.backgroundColor = 'var(--dark-purple)';
+        navbar.style.opacity = 0.9;
+    } else {
+        navbar.style.backgroundColor = 'transparent';
     }
-};
+}
