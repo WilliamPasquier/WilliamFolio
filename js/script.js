@@ -3,6 +3,7 @@
 window.onload = () => {
     navEvents();
     homeEvents();
+    whoEvents();
 
     entryAnimation();
 }

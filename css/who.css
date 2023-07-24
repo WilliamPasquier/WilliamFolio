@@ -1,0 +1,63 @@
+#who-am-i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 15%;
+    background-color: var(--snow);
+}
+
+.who-title {
+    color: var(--eminence);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.who-container {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.presentation {
+    color: var(--eminence);
+    font-size: 1.25rem;
+}
+
+.presentation #age-text {
+    color: var(--eminence);
+}
+
+.presentation .presentation-link {
+    color: var(--veronica);
+    text-decoration: none;
+}
+
+.profile-image {
+    width: 360px;
+    height: 360px; 
+}
+
+/*RESPONSIVENESS*/
+/* Tablet device */
+@media (max-width: 960px) {
+    .who-container {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Mobile device */
+@media (max-width: 640px) { 
+    #who-am-i {
+        padding: 6rem 15%;
+    }
+
+    .who-title {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        width: 270px;
+        height: 270px; 
+    }
+}
