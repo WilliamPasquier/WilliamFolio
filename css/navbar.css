@@ -3,8 +3,12 @@
     max-height: 102px;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+
+    position: fixed;
     top: 0;
+    z-index: 9999;
+
+    background-color: transparent;
 }
 
 .primary-header #logo-navbar {
@@ -28,6 +32,7 @@
 }
 
 .primary-nav .link-btn {
+    color: var(--snow); 
     text-decoration: none;
 }
 
@@ -46,6 +51,7 @@
 }
 
 /*RESPONSIVENESS*/
+/* Mobile device */
 @media (max-width: 640px) {
     .primary-nav {
         position: fixed;
@@ -68,6 +74,11 @@
     .primary-nav .active {
         color: var(--snow);
         text-decoration-color: var(--snow);
+    }
+
+    .primary-nav .link-btn:hover {
+        color: var(--snow);
+        transition: color 350ms ease-out;
     }
 
     .nav-toggle {

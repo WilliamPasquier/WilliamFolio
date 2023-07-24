@@ -7,12 +7,17 @@
     <title>William Pasquier </title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
-    <script src="js/script.js"></script>
-    <script src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/who.js"></script>
+    <script type="text/javascript" src="js/librairies/vanilla-tilt.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/variables.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/who.css">
 </head>
 <body>
     <header class="primary-header flex">
@@ -30,13 +35,13 @@
                     <a class="link-btn active" href="#home">Home</a>
                 </li>
                 <li>
-                    <a class="link-btn" href="#projects">Projects</a>
-                </li>
-                <li>
                     <a class="link-btn" href="#who-am-i">Who am i ?</a>
                 </li>
                 <li>
-                    <a class="link-btn" href="#my-skills">My skills</a>
+                    <a class="link-btn" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="link-btn" href="#experience">Experience</a>
                 </li>
                 <li>
                     <a class="link-btn" href="#contact">Contact me</a>
@@ -48,7 +53,7 @@
 
     <main>
             
-        <div id="main-container">
+        <!-- <div id="main-container">
             <div class="info">
                 <img src="./resources/images/XL_logo_2_2.png" id="logo-img" class="entry_anim">
                 <div id="text-content" class="entry_anim">
@@ -61,8 +66,59 @@
                 <a class="link-button" href="https://twitter.com/WillPasquier" target="_blank">Twitter</a>
                 <a class="link-button" href="https://www.instagram.com/pasquier.william/" target="_blank">Instagram</a>
             </div>
-        </div>
+        </div> -->
 
+        <section id="home">
+            <div class="home-container">
+                <!-- <div class="home-card glass-effect">
+                    <div class="text-container">
+                        <span class="content-text">Welcome, my name is</span>
+                        <h1 class="title-name">William Pasquier.</h1>
+                        <p class="title-text">I'm an apprentice <span class="work-text">Software Developer</span>.</p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="start-container">
+                <a class="start-button links" href="#who-am-i">Let's started !</a>
+            </div>
+        </section>
+        
+        <section id="who-am-i">
+            <h1 class="who-title">More about me</h1>
+            <div class="who-container">
+                <p class="presentation">
+                    Welcome and thank you for visiting my website. Let's talk a little more about me.
+                    My name is William Pasquier, I'm <span id="age-text"></span> and I live in Switzerland. 
+                    I'm currently an IT apprentice specializing in development at an insurance company called <a class="presentation-link" href="https://www.vaudoise.ch/fr/particulier" target="_blank">Vaudoise Assurance</a>. 
+                    This August, I'm starting the final year of my 4-year apprenticeship.
+                    <br />
+                    <br />
+                    During my apprenticeship, I was able to see different facets of the business, such as what a computer is and what it's made of. 
+                    The basics of servers and DNS and how they work. 
+                    Also different Back-end technologies such as basic Java and C#, which I coupled with Frameworks (ASP.NET, Entity Framework Core). 
+                    For the Front-end, I was able to learn and use frameworks such as React and Angular in different projects and exercises, and perfect my use of HTML, CSS and JavaScript / TypeScript. 
+                    I was also tested on database design and modeling (MCD, MLD, MPD). (You can see more on <a class="presentation-link" href="#experience">Experience</a> Section).
+                    <br />
+                    <br />
+                    All the aspects I've listed above are put into practice in my company. 
+                    Every year I have the opportunity to change teams and projects in order to discover multiple aspects of the job as well as collaborate with real colleagues and follow sessions such as Dailies, Refinements or planning.
+                </p>
+                <img class="profile-image" src="/resources/images/icon.png" />
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h1>test</h1>
+        </section>
+
+        <section id="experience">
+            <h1>test</h1>
+        </section>
+
+        <section id="contact">
+            <h1>test</h1>
+        </section>
     </main>
 
     <footer>
