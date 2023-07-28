@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "WilliamFolio",
+        "previewDescription": "Website introducing myself, my projects and my experiences",
+        "description": "",
+        "year": 2023,
+        "type": "Personal Project",
+        "tags" : [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "imageUrls": [
+            ""
+        ]
+    }
+]

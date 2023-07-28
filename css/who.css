@@ -1,8 +1,4 @@
 #who-am-i {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 6rem 15%;
     background-color: var(--snow);
 }
@@ -48,10 +44,6 @@
 
 /* Mobile device */
 @media (max-width: 640px) { 
-    #who-am-i {
-        padding: 6rem 15%;
-    }
-
     .who-title {
         font-size: 2rem;
     }

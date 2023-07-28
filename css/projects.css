@@ -1,0 +1,96 @@
+#projects {
+    padding: 6rem 5%;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    width: 26rem;
+    min-height: 11rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+    background-color: var(--snow);
+    box-shadow: 0.25rem 0.25rem 1rem 0 rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-out;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+hr {
+    background-color: var(--eminence);
+    margin-bottom: 3px;
+}
+
+.card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+    margin: 1rem 0;
+}
+
+.card-title {
+    color: var(--eminence);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.card-year {
+    color: var(--eminence);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-content {
+    width: 100%;
+}
+
+.card-pre-description {
+    color: var(--eminence);
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-tags {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    color: var(--eminence);
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.card-type {
+    color: var(--eminence);
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
