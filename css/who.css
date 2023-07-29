@@ -1,8 +1,4 @@
 #who-am-i {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 6rem 15%;
     background-color: var(--snow);
 }
