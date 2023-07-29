@@ -35,6 +35,7 @@
 .primary-nav .link-btn {
     color: var(--snow); 
     text-decoration: none;
+    transition: color 350ms ease-out;
 }
 
 .primary-nav .link-btn:hover {
@@ -85,6 +86,10 @@
         top: 2rem;
         right: 2rem;
         z-index: 9999;
+    }
+
+    .nav-toggle:hover {
+        cursor: pointer;
     }
 
     .nav-toggle[aria-expanded="true"] {

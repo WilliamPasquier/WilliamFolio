@@ -25,7 +25,7 @@ var changeNavbarOnScroll = () => {
     const navbar = document.querySelector('.primary-header');
 
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) { 
-        navbar.style.backgroundColor = 'rgba( 27, 22, 49, 0.6 )';
+        navbar.style.backgroundColor = 'rgba( 27, 22, 49, 0.9 )';
 
         if (CSS.supports("backdrop-filter", "blur(6px)")) {
             navbar.style.backdropFilter = 'blur(6px)'
