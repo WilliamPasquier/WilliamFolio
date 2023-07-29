@@ -1,4 +1,5 @@
 #who-am-i {
+    align-items: center;
     padding: 6rem 15%;
     background-color: var(--snow);
 }

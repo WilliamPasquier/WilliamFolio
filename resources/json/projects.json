@@ -1,18 +1,19 @@
 [
     {
-        "id": 1,
         "title": "WilliamFolio",
         "previewDescription": "Website introducing myself, my projects and my experiences",
-        "description": "",
+        "description": "In order to introduce myself, I decided to create a small web page in HTML, CSS and JavaScript to present my projects, my work, my academic and professional background, for people unfamiliar with the Swiss education system. This project also enabled me to learn more about CSS and JavaScript.",
         "year": 2023,
         "type": "Personal Project",
+        "demo": "https://williampasquier.ch/",
+        "repo": "https://github.com/WilliamPasquier/WilliamFolio",
         "tags" : [
             "HTML",
             "CSS",
             "JavaScript"
         ],
         "imageUrls": [
-            ""
+            "/resources/images/projects-thumbnail/williamfolio_thumbnail.png"
         ]
     }
 ]
