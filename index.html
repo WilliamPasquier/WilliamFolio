@@ -11,6 +11,8 @@
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
     <script type="text/javascript" src="js/who.js"></script>
+    <script type="text/javascript" src="js/projects.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
     <script type="text/javascript" src="js/librairies/vanilla-tilt.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
@@ -18,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/who.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
 </head>
 <body>
     <header class="primary-header flex">
@@ -70,20 +73,20 @@
 
         <section id="home">
             <div class="home-container">
-                <!-- <div class="home-card glass-effect">
+                <div class="home-card glass-effect">
                     <div class="text-container">
                         <span class="content-text">Welcome, my name is</span>
                         <h1 class="title-name">William Pasquier.</h1>
                         <p class="title-text">I'm an apprentice <span class="work-text">Software Developer</span>.</p>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="start-container">
                 <a class="start-button links" href="#who-am-i">Let's started !</a>
             </div>
         </section>
         
-        <section id="who-am-i">
+        <section class="section-container" id="who-am-i">
             <h1 class="who-title">More about me</h1>
             <div class="who-container">
                 <p class="presentation">
@@ -108,21 +111,26 @@
 
         </section>
 
-        <section id="projects">
-            <h1>test</h1>
+        <section class="section-container" id="projects">
+            <h1 class="project-title">Projects i'm proud of</h1>
+            <div class="projects-container">
+            </div>
         </section>
 
-        <section id="experience">
-            <h1>test</h1>
+        <section class="section-container" id="experience">
+            <h1>My experiences</h1>
         </section>
 
         <section id="contact">
-            <h1>test</h1>
+            <h1>Contact me</h1>
         </section>
     </main>
 
+    <div id="project-detail" aria-expanded="false">
+    </div>
+
     <footer>
-        
+        <p>Footer content</p>
     </footer>
 </body>
 </html>

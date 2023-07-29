@@ -50,6 +50,30 @@ main {
     transition: ease-in 0.1s;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .section-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+} */
+
+@media (max-width: 960px) {
+    .section-container div {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Mobile device */
+@media (max-width: 640px) { 
+    .section-container h1 {
+        font-size: 2rem;
+    }
+}
+
 /* section {
     height: 100vh;
 } */

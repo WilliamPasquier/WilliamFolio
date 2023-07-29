@@ -4,6 +4,7 @@ window.onload = () => {
     navEvents();
     homeEvents();
     whoEvents();
+    projectsEvents();
 
     entryAnimation();
 }
