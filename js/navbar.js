@@ -26,12 +26,14 @@ var changeNavbarOnScroll = () => {
 
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) { 
         navbar.style.backgroundColor = 'rgba( 27, 22, 49, 0.9 )';
+        navbar.style.boxShadow = '0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 )';
 
         if (CSS.supports("backdrop-filter", "blur(6px)")) {
             navbar.style.backdropFilter = 'blur(6px)'
         }
     } else {
         navbar.style.backgroundColor = 'transparent';
-        navbar.style.backdropFilter = 'none'
+        navbar.style.backdropFilter = 'none';
+        navbar.style.boxShadow = 'none';
     }
 }
