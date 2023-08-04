@@ -156,8 +156,6 @@
 .detail-icon {
     width: 45px;
     aspect-ratio: 1;
-    background-image: url(../resources/images/icons/clic-icon.svg);
-    background-repeat: no-repeat;
 }
 
 .detail-title {
