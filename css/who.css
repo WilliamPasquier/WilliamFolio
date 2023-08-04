@@ -12,7 +12,7 @@
 .who-container {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 4rem;
 }
 
 .presentation {
