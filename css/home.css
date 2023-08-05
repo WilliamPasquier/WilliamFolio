@@ -19,6 +19,17 @@
     padding-bottom: 5rem;
 }
 
+.start-button:hover {
+    background-color: var(--amethyst);
+    transition: ease-in 0.1s;
+}
+
+.start-button:active {
+    border: 3px solid var(--eminence);
+    background-color: var(--eminence);
+    transition: ease-in 0.1s;
+}
+
 .home-card {
     width: 50rem;
     height: 26.25rem;
