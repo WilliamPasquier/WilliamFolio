@@ -1,0 +1,42 @@
+#experience {
+    padding: 5rem 5%;
+    background-color: var(--snow);
+}
+
+.experience-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark-purple-2);
+}
+
+.experience-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.experience-nav button {
+    padding: 0.5rem 1rem;
+    color: var(--eminence);
+    font-size: 1rem;
+    border: solid 3px var(--eminence);
+    border-radius: 5rem;
+    font-weight: 700;
+    background-color: transparent;
+    transition: ease-in 0.1s;
+}
+
+.experience-nav button:hover {
+    color: var(--snow);
+    background-color: var(--eminence);
+    transition: ease-in 0.1s;
+}
+
+.year-active {
+    color: var(--snow);
+    border: solid 3px var(--eminence);
+    background-color: var(--eminence);
+}
