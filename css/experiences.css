@@ -1,42 +1,73 @@
-#experience {
+#section-container {
+    position: relative;
     padding: 5rem 5%;
     background-color: var(--snow);
 }
 
-.experience-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--dark-purple-2);
-}
-
-.experience-nav {
+.tabs-container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    border-bottom: solid 2px var(--cadet-gray);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
-.experience-nav button {
-    padding: 0.5rem 1rem;
-    color: var(--eminence);
-    font-size: 1rem;
-    border: solid 3px var(--eminence);
-    border-radius: 5rem;
+.tabs-container .tab {
+    min-width: 11.25rem;
+    padding: 0 0.5rem;
+    border: 0;
+    color: var(--cadet-gray);
+    font-family: 'Ubuntu', 'Sans-serif';
+    font-size: 1.5rem;
     font-weight: 700;
     background-color: transparent;
-    transition: ease-in 0.1s;
+    transition: all 350ms ease-out;
 }
 
-.experience-nav button:hover {
-    color: var(--snow);
-    background-color: var(--eminence);
-    transition: ease-in 0.1s;
+.tabs-container .tab:hover {
+    cursor: pointer;
 }
 
-.year-active {
-    color: var(--snow);
-    border: solid 3px var(--eminence);
-    background-color: var(--eminence);
+.tabs-container .active-tab {
+    color: var(--dark-purple-2);
+    transform: translateY(-0.5rem);
+    transition: all 350ms ease-out;
+}
+
+.line {
+    width: 5.625rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 8.25rem;
+    left: 0;
+    border-radius: 10px;
+    background-color: var(--dark-purple-2);
+    transition: all 350ms ease-out;
+}
+
+.sections-container .sub-sections { 
+    display: none;
+    animation: moving 500ms ease;
+}
+.sections-container .active-section { 
+    display: flex;
+}
+
+.sections-container .sub-sections .experience-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark-purple-2); 
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(3.125rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

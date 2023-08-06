@@ -5,12 +5,15 @@ window.onload = () => {
     homeEvents();
     whoEvents();
     projectsEvents();
+    experienceEvents();
 
     entryAnimation();
+    setLine();
 }
 
 window.onresize = () => {
     getScreenSize();
+    setLine();
 }
 
 window.onscroll = () => {
