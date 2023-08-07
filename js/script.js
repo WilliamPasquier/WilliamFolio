@@ -8,12 +8,10 @@ window.onload = () => {
     experienceEvents();
 
     entryAnimation();
-    setLine();
 }
 
 window.onresize = () => {
     getScreenSize();
-    setLine();
 }
 
 window.onscroll = () => {
