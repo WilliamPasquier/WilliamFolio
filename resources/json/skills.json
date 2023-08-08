@@ -1,0 +1,151 @@
+[
+    {
+        "type": "Programming language",
+        "skills":
+        [
+            {
+                "name": "C",
+                "rate": 20,
+                "logo": "c-icon.svg"
+            },
+            {
+                "name": "C#",
+                "rate": 50,
+                "logo": "csharp-icon.svg"
+            },
+            {
+                "name": "Java",
+                "rate": 20,
+                "logo": "java-icon.svg"
+            },
+            {
+                "name": "Python",
+                "rate": 30,
+                "logo": "python-icon.svg"
+            },
+            {
+                "name": "HTML",
+                "rate": 60,
+                "logo": "html-icon.svg"
+            },
+            {
+                "name": "CSS",
+                "rate": 40,
+                "logo": "css-icon.svg"
+            },
+            {
+                "name": "JavaSript",
+                "rate": 50,
+                "logo": "js-icon.svg"
+            },
+            {
+                "name": "TypeScript",
+                "rate": 40,
+                "logo": "ts-icon.svg"
+            },
+            {
+                "name": "Git",
+                "rate": 40,
+                "logo": "git-icon.svg"
+            }
+        ]
+    },
+    {
+        "type": "Framework",
+        "skills":
+        [
+            {
+                "name": "Angular",
+                "rate": 40,
+                "logo": "angular-icon.svg"
+            },
+            {
+                "name": "React",
+                "rate": 20,
+                "logo": "React-icon.svg"
+            },
+            {
+                "name": "Node.js",
+                "rate": 20,
+                "logo": "nodejs-icon.svg"
+            },
+            {
+                "name": "ExpressJS",
+                "rate": 20,
+                "logo": "expressjs-icon.png"
+            },
+            {
+                "name": "Laravel",
+                "rate": 10,
+                "logo": "laravel-icon.svg"
+            },
+            {
+                "name": ".NET",
+                "rate": 20,
+                "logo": "dotnet-icon.svg"
+            },
+            {
+                "name": "EntityFramework Core",
+                "rate": 20,
+                "logo": "efcore-icon.png"
+            }
+        ]
+    },
+    {
+        "type": "Database",
+        "skills":
+        [
+            {
+                "name": "SQL",
+                "rate": 40,
+                "logo": "sql-icon.svg"
+            },
+            {
+                "name": "SQL Server",
+                "rate": 10,
+                "logo": "sqlserver-icon.svg"
+            },
+            {
+                "name": "EntityFramework Core",
+                "rate": 20,
+                "logo": "efcore-icon.png"
+            }
+        ]
+    },
+    {
+        "type": "Software",
+        "skills":
+        [
+            {
+                "name": "Git",
+                "rate": 40,
+                "logo": "git-icon.svg"
+            },
+            {
+                "name": "Photoshop",
+                "rate": 60,
+                "logo": "photoshop-icon.svg"
+            },
+            {
+                "name": "Illustrator",
+                "rate": 40,
+                "logo": "illustrator-icon.svg"
+            },
+            {
+                "name": "Cinema4D",
+                "rate": 30,
+                "logo": "c4d-icon.png"
+            },
+            {
+                "name": "Octane Render",
+                "rate": 30,
+                "logo": "octanerender-icon.svg"
+            },
+            {
+                "name": "Blender",
+                "rate": 20,
+                "logo": "blender-icon.svg"
+            }
+        ]
+    }
+]

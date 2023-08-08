@@ -1,4 +1,4 @@
-#section-container {
+#experience {
     position: relative;
     padding: 5rem 5%;
     background-color: var(--snow);
@@ -27,7 +27,6 @@
     transition: all 350ms ease-out;
 }
 
-
 .tabs-container li .tab:hover {
     cursor: pointer;
 }
@@ -47,19 +46,32 @@
     align-items: center;
     animation: moving 500ms ease;
 }
+
+.sections-container .sub-sections * {
+    color: var(--dark-purple-2);
+}
+
 .sections-container .active-section {
     display: flex;
 }
 
-.sections-container .sub-sections .experience-title {
+.experience-title {
     color: var(--dark-purple-2); 
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
+.skills-content {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
 .skills-container {
-    padding: 1rem 2rem;
+    width: 75%;
+    padding: 2rem 3rem;
     border-radius: 1rem;
+    text-align: center;
     background-color: var(--snow);
     box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
 }
@@ -74,20 +86,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .skills-list .skill {
-    width: 90px;
+    min-width: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-}
-
-.skills-list .skill * {
-    color: var(--dark-purple-2);
 }
 
 .skills-list .skill .skill-logo {
@@ -100,14 +108,13 @@
 }
 
 .skills-list .skill .rate-background {
-    width: 100%;
+    width: 120px;
     height: 0.5rem;
     background-color: var(--platinum);
     border-radius: 10px;
 }
 
 .skills-list .skill .rate-background .rate-bar {
-    width: 20%;
     height: 0.5rem;
     border-radius: 10px;
     background-color: var(--amethyst);
