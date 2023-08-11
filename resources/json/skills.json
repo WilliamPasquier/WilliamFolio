@@ -61,12 +61,12 @@
             },
             {
                 "name": "React",
-                "rate": 20,
+                "rate": 30,
                 "logo": "React-icon.svg"
             },
             {
                 "name": "Node.js",
-                "rate": 20,
+                "rate": 30,
                 "logo": "nodejs-icon.svg"
             },
             {
