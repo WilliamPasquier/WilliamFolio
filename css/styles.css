@@ -39,11 +39,25 @@ main {
     border-radius: 2rem;
 }
 
+.glass-effect {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+
 .section-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.section-container > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .medium-font {
