@@ -67,7 +67,12 @@
             {
                 "name": "React",
                 "rate": 30,
-                "logo": "React-icon.svg"
+                "logo": "react-icon.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "rate": 20,
+                "logo": "bootstrap-icon.svg"
             },
             {
                 "name": "Node.js",
