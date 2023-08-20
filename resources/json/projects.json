@@ -20,5 +20,30 @@
         "imageUrls": [
             "./resources/images/projects-thumbnails/williamfolio/williamfolio_thumbnail.png"
         ]
+    },
+    {
+        "title": "NTX Project",
+        "icon": "./resources/images/badges/project/projectntx-badge.svg",
+        "previewDescription": "Ecommerce project selling components to learn coding and some framework",
+        "description": [
+            "When I started my company, one of the first projects I was able to do was a sales site for a fictitious company specializing in electronic components called NTX. Serious competition for Intel and AMD. This was the first project that allowed me to experiment with NodeJS and ExpressJS.",
+            "The aim was to create a fully functional site, from purchase to support, including a confirmation e-mail for purchases. The whole thing was designed with Bootstrap and Sass (to learn the language).",
+            "Although the code is poorly written, it's the first project I've built on my own, and it shows how far I've come."
+        ],
+        "year": 2020,
+        "type": "Personal Project",
+        "repo": "https://github.com/WilliamPasquier/project-ntx",
+        "tags" : [
+            "html5",
+            "css3",
+            "js",
+            "sass",
+            "bootstrap",
+            "nodejs",
+            "expressjs"
+        ],
+        "imageUrls": [
+            "./resources/images/projects-thumbnails/projectntx/projectntx-homepage.png"
+        ]
     }
 ]
