@@ -12,6 +12,8 @@
     <script type="text/javascript" src="js/home.js"></script>
     <script type="text/javascript" src="js/who.js"></script>
     <script type="text/javascript" src="js/projects.js"></script>
+    <script type="text/javascript" src="js/experiences.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
     <script type="text/javascript" src="js/utils.js"></script>
     <script type="text/javascript" src="js/librairies/vanilla-tilt.js"></script>
 
@@ -21,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/who.css">
     <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/experiences.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
     <header class="primary-header flex">
@@ -73,13 +77,13 @@
 
         <section id="home">
             <div class="home-container">
-                <div class="home-card glass-effect">
+                <!-- <div class="home-card glass-effect">
                     <div class="text-container">
                         <span class="content-text">Welcome, my name is</span>
                         <h1 class="title-name">William Pasquier.</h1>
                         <p class="title-text">I'm an apprentice <span class="work-text">Software Developer</span>.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="start-container">
                 <a class="start-button links" href="#who-am-i">Let's started !</a>
@@ -87,7 +91,7 @@
         </section>
         
         <section class="section-container" id="who-am-i">
-            <h1 class="who-title">More about me</h1>
+            <h2 class="who-title">More about me</h2>
             <div class="who-container">
                 <p class="presentation">
                     Welcome and thank you for visiting my website. Let's talk a little more about me.
@@ -112,17 +116,68 @@
         </section>
 
         <section class="section-container" id="projects">
-            <h1 class="project-title">Projects i'm proud of</h1>
+            <h2 class="project-title">Projects i'm proud of</h2>
             <div class="projects-container">
             </div>
         </section>
 
         <section class="section-container" id="experience">
-            <h1>My experiences</h1>
+            <nav id="nav-experience">
+                <ul class="tabs-container">
+                    <li>
+                        <button class="tab active-tab"></span> Experiences</button>
+                    </li>
+                    <li>
+                        <button class="tab">Companies</button>
+                    </li>
+                    <li>
+                        <button class="tab">Skills</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sections-container">
+                <section class="sub-sections active-section" id="timeline">
+                    <h3 class="experience-title">My experiences</h3>
+                    <div class="section-content" id="timeline-content">
+                        <div class="timeline">
+                            <div class="checkpoint">
+                                <div class="checkpoint-header">
+                                    <h4 class="checkpoint-title">I started my 1st year as an apprentice electronics technician</h4>
+                                    <span class="checkpoint-year medium-font">August 2018</span>
+                                </div>
+                                <div class="checkpoint-content">
+                                    <p class="medium-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus inventore iste distinctio nihil hic accusantium corporis ipsa, cumque ab consectetur non modi eveniet ullam ad, aperiam voluptates expedita qui deleniti.</p>
+                                </div>
+                                <div class="checkpoint-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="sub-sections" id="company">
+                    <h3 class="experience-title">Companies I worked for</h3>
+                    <div class="section-content" id="companies-content">
+                    </div>
+                </section>
+                
+                <section class="sub-sections" id="skill">
+                    <h3 class="experience-title">My skills</h3>
+                    <div class="section-content" id="skills-content">
+                    </div>
+                </section>
+            </div>
         </section>
 
-        <section id="contact">
-            <h1>Contact me</h1>
+        <section class="section-container" id="contact">
+            <h2 class="contact-title">Contact me</h2>
+            <div class="links-container">
+                <a href="https://github.com/WilliamPasquier" target="_blank" rel="noopener noreferrer" class="link"><span class="link-icon github"></span>Github</a>
+                <a href="https://twitter.com/WillPasquier" target="_blank" rel="noopener noreferrer" class="link"><span class="link-icon twitter"></span>Twitter</a>
+                <a href="https://discord.gg/nnpda6exjH" target="_blank" rel="noopener noreferrer" class="link"><span class="link-icon discord"></span>Discord</a>
+                <a href="mailto:contact@williampasquier.ch" class="link"><span class="link-icon mail"></span>Mail</a>
+            </div>
         </section>
     </main>
 
@@ -130,7 +185,11 @@
     </div>
 
     <footer>
-        <p>Footer content</p>
+        <span class="copyright medium-font">© 2023 Website created by William Pasquier</span>
+        <span class="license medium-font">
+            <span class="law-icon"></span>
+            MIT License
+        </span>
     </footer>
 </body>
 </html>

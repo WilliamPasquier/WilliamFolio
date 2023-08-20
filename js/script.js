@@ -5,6 +5,7 @@ window.onload = () => {
     homeEvents();
     whoEvents();
     projectsEvents();
+    experienceEvents();
 
     entryAnimation();
 }

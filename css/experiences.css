@@ -1,0 +1,217 @@
+#experience {
+    position: relative;
+    padding: 5rem 15%;
+    background-color: var(--snow);
+}
+
+#nav-experience {
+    width: 100%;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 2px var(--cadet-gray);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.tabs-container li .tab {
+    min-width: 11.25rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    color: var(--cadet-gray);
+    font-family: 'Ubuntu', 'Sans-serif';
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 350ms ease-out;
+}
+
+.tabs-container li .active-tab {
+    border-radius: 15rem;
+    color: var(--snow);
+    background-color: var(--dark-purple-2);
+    transform: translateY(-0.5rem);
+    transition: all 350ms ease-out;
+}
+
+.sections-container .sub-sections {
+    min-height: 20.625rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    animation: moving 500ms ease;
+}
+
+.sections-container .sub-sections * {
+    color: var(--dark-purple-2);
+}
+
+.sections-container .active-section {
+    display: flex;
+}
+
+.experience-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.timeline, .company-container, .skills-container {
+    width: 75%;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.checkpoint {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 3rem; 
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
+}
+
+.checkpoint-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkpoint-title {
+    font-size: 2rem;
+}
+
+.checkpoint-year { 
+    font-weight: 700;
+}
+
+.company-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.company-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.company-logo {
+    width: 360px;
+}
+
+.company-name {
+    font-size: 2rem;
+}
+
+.years {
+    font-weight: 700;
+}
+
+.company-content {
+    width: 100%;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
+}
+
+.company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.company-description {
+    width: 100%;
+}
+
+.company-description p {
+
+    margin-bottom: 0.5rem;
+}
+
+.skills-container {
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: var(--snow);
+    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
+}
+
+.skills-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.skills-list .skill {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.skills-list .skill .skill-logo {
+    width: 81px;
+    aspect-ratio: 1;
+}
+
+.skills-list .skill .skill-name {
+    font-size: 1.25rem;
+}
+
+.skills-list .skill .rate-background {
+    width: 120px;
+    height: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--platinum);
+}
+
+.skills-list .skill .rate-background .rate-bar {
+    height: 0.5rem;
+    border-radius: 10px;
+    background: linear-gradient(315deg, rgba(155,81,219,1) 0%, rgba(92,49,129,1) 100%);
+}
+
+
+@keyframes moving {
+    from {
+        transform: translateX(3.125rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,64 @@
+#contact {
+    padding: 5rem 5%;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    min-width: 9.375rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700    ;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--dark-purple-2);
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+    transition: transform 350ms ease-out;
+}
+
+.link:hover {
+    transform: translateY(-0.5rem);
+}
+
+.link:active {
+    background-color: var(--dark-purple-3);
+}
+
+.link > .link-icon {
+    width: 30px;
+    aspect-ratio: 1;
+    display: block;
+}
+
+.github {
+    background-image: url(../resources/images/icons/github.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.twitter {
+    background-image: url(../resources/images/icons/x.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.discord {
+    background-image: url(../resources/images/icons/discord.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mail {
+    background-image: url(../resources/images/icons/mail-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}

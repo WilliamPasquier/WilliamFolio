@@ -1,12 +1,10 @@
 #who-am-i {
-    padding: 6rem 15%;
+    padding: 5rem 15%;
     background-color: var(--snow);
 }
 
 .who-title {
-    color: var(--eminence);
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    color: var(--dark-purple-2);
 }
 
 .who-container {

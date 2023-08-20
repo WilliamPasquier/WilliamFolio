@@ -43,25 +43,6 @@ var createProjects = (data) => {
             }
         } 
 
-        // projectContainer.innerHTML += `
-        //     <div class="project-card" onclick="cardClicked(${i})">
-        //         <div id class="card-header">
-        //             <h1 class="card-title">${currentProject.title}</h1>
-        //             <span class="card-year">${currentProject.year}</span>
-        //         </div>
-        //         <div class="card-content">
-        //             <p class="card-pre-description">${currentProject.previewDescription}</p>
-        //         </div>
-        //         <hr>
-        //         <div class="card-footer">
-        //             <div class="card-tags">
-        //                 ${projectTags}
-        //             </div>
-        //             <span class="card-type">${currentProject.type}</span>
-        //         </div>
-        //     </div>
-        // `;
-
         projectContainer.innerHTML += `
         <div class="project-card" onclick="cardClicked(${i})">   
             <div class="card-content">
@@ -111,20 +92,20 @@ var cardClicked = (id) => {
             `;
         }
     } else {
-        imgs = '<li class="none-text">No tags found<li/>'
+        imgs = '<li class="medium-font">No tags found<li/>'
     }
 
     if (project.description.length > 0) {
         for (let desc = 0; desc < project.description.length; desc++) {
             descs += `
-                <p class="detail-description">
+                <p class="detail-description medium-font">
                     ${project.description[desc]}
                 </p>
                 <br/>
             `;
         }
     } else {
-        descs = '<p class="none-text">No descriptions found<p/>'
+        descs = '<p class="medium-font">No descriptions found<p/>'
     }
 
     if (project.demo) {

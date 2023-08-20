@@ -2,21 +2,11 @@
     padding: 6rem 3%;
 }
 
-.project-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
 .projects-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.none-text {
-    font-size: 1.25rem;
 }
 
 .project-card {
@@ -58,11 +48,11 @@
     transition: all 0.3s;
 }
 
-.overlay p {
+.more-text {
     font-size: 1.5rem;
 }
 
-.overlay p img { 
+.more-text img { 
     width: 25px;
     aspect-ratio: 1;
     margin-right: 0.5rem;
@@ -121,10 +111,6 @@
 .tag {
     width: 30px;
     aspect-ratio: 1;
-}
-
-.medium-font {
-    font-size: 1.25rem;
 }
 
 .bold {
@@ -212,10 +198,6 @@
     width: 45%;
     display: flex;
     flex-direction: column;
-}
-
-.detail-description {
-    font-size: 1.25rem;
 }
 
 .image-container {
