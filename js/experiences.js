@@ -69,7 +69,7 @@ function createSkills(skillsData) {
 }
 
 function createCompanies(companiesData) {
-    const companiesContainer = document.querySelector('.company-container');
+    const companiesContainer = document.querySelector('#companies-content');
 
     if (companiesData.length == 0) {
         skillsContainer.innerHTML = `<span class="none-text">No Companies found</span>`;
@@ -90,14 +90,14 @@ function createCompanies(companiesData) {
         companiesContainer.innerHTML += `
             <div class="company-card">
                 <a href="${company.link}" target="_blank" rel="noopener noreferrer">
-                    <img src="./resources/images/companies/${company.logo}" alt="" class="company-logo">
+                    <img src="./resources/images/icons/companies/${company.logo}" alt="" class="company-logo">
                 </a>
                 <div class="company-content">
                     <div class="company-header">
                         <h4 class="company-name">${company.companyName}</h4>
                         <span class="years medium-font">${company.startYear} - ${company.endYear}</span>
                     </div>
-                    <div class="description-container">
+                    <div class="company-description">
                         ${desc}
                     </div>
                 </div>

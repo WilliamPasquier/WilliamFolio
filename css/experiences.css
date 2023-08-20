@@ -1,11 +1,11 @@
 #experience {
     position: relative;
-    padding: 5rem 5%;
+    padding: 5rem 15%;
     background-color: var(--snow);
 }
 
 #nav-experience {
-    width: 75%;
+    width: 100%;
 }
 
 .tabs-container {
@@ -14,7 +14,7 @@
     align-items: center;
     border-bottom: solid 2px var(--cadet-gray);
     padding-bottom: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     list-style: none;
 }
 
@@ -28,11 +28,8 @@
     font-size: 1.5rem;
     font-weight: 700;
     background-color: transparent;
-    transition: all 350ms ease-out;
-}
-
-.tabs-container li .tab:hover {
     cursor: pointer;
+    transition: all 350ms ease-out;
 }
 
 .tabs-container li .active-tab {
@@ -61,13 +58,36 @@
 
 .experience-title {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .section-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
+}
+
+.timeline, .company-container, .skills-container {
+    width: 75%;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.checkpoint {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 3rem; 
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
 }
 
 .checkpoint-header {
@@ -75,8 +95,15 @@
     justify-content: space-between;
 }
 
+.checkpoint-title {
+    font-size: 2rem;
+}
+
+.checkpoint-year { 
+    font-weight: 700;
+}
+
 .company-container {
-    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,7 +111,6 @@
 }
 
 .company-card {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +118,7 @@
 }
 
 .company-logo {
-    width: 420px;
+    width: 360px;
 }
 
 .company-name {
@@ -117,16 +143,16 @@
     margin-bottom: 1rem;
 }
 
-.description-container {
+.company-description {
     width: 100%;
 }
 
-.description-container p {
+.company-description p {
+
     margin-bottom: 0.5rem;
 }
 
 .skills-container {
-    width: 75%;
     padding: 2rem 3rem;
     border-radius: 1rem;
     text-align: center;
@@ -175,7 +201,6 @@
 .skills-list .skill .rate-background .rate-bar {
     height: 0.5rem;
     border-radius: 10px;
-    /* background-color: var(--eminence); */
     background: linear-gradient(315deg, rgba(155,81,219,1) 0%, rgba(92,49,129,1) 100%);
 }
 

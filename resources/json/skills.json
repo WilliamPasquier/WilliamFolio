@@ -34,6 +34,11 @@
                 "logo": "css-icon.svg"
             },
             {
+                "name": "Sass",
+                "rate": 40,
+                "logo": "sass-icon.svg"
+            },
+            {
                 "name": "JavaSript",
                 "rate": 50,
                 "logo": "js-icon.svg"
