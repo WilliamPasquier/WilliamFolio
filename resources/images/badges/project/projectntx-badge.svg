@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fdfaff;
+      }
+    </style>
+  </defs>
+  <g id="Calque_27" data-name="Calque 27">
+    <rect class="cls-1" x="7.78" y="7.78" width="44.44" height="44.44" rx="2.5" ry="2.5"/>
+    <rect class="cls-1" x="11.11" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="19.44" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="27.78" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="36.11" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="44.44" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="11.11" y="53.33" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="19.44" y="53.33" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="27.78" y="53.33" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="36.11" y="53.33" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="44.44" y="53.33" width="4.44" height="6.67" rx="1" ry="1"/>
+    <rect class="cls-1" x="54.44" y="10" width="4.44" height="6.67" rx="1" ry="1" transform="translate(70 -43.33) rotate(90)"/>
+    <rect class="cls-1" x="54.44" y="18.33" width="4.44" height="6.67" rx="1" ry="1" transform="translate(78.33 -35) rotate(90)"/>
+    <rect class="cls-1" x="54.44" y="26.67" width="4.44" height="6.67" rx="1" ry="1" transform="translate(86.67 -26.67) rotate(90)"/>
+    <rect class="cls-1" x="54.44" y="35" width="4.44" height="6.67" rx="1" ry="1" transform="translate(95 -18.33) rotate(90)"/>
+    <rect class="cls-1" x="54.44" y="43.33" width="4.44" height="6.67" rx="1" ry="1" transform="translate(103.33 -10) rotate(90)"/>
+    <rect class="cls-1" x="1.11" y="10" width="4.44" height="6.67" rx="1" ry="1" transform="translate(16.67 10) rotate(90)"/>
+    <rect class="cls-1" x="1.11" y="18.33" width="4.44" height="6.67" rx="1" ry="1" transform="translate(25 18.33) rotate(90)"/>
+    <rect class="cls-1" x="1.11" y="26.67" width="4.44" height="6.67" rx="1" ry="1" transform="translate(33.33 26.67) rotate(90)"/>
+    <rect class="cls-1" x="1.11" y="35" width="4.44" height="6.67" rx="1" ry="1" transform="translate(41.67 35) rotate(90)"/>
+    <rect class="cls-1" x="1.11" y="43.33" width="4.44" height="6.67" rx="1" ry="1" transform="translate(50 43.33) rotate(90)"/>
+  </g>
+</svg>
