@@ -3,7 +3,7 @@
 }
 
 .links-container {
-    height: 13.125rem;
+    min-height: 13.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
