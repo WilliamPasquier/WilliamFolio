@@ -150,7 +150,7 @@
     background: linear-gradient(135deg, rgba(254,89,52,1) 0%, rgba(252,3,90,1) 100%);
     
     filter: blur(12px);
-    animation: blobAnimation1 5s infinite ease-out;
+    animation: blobAnimation1 12.5s infinite;
 }
 
 .bg2 {
@@ -180,7 +180,7 @@
     background: linear-gradient(135deg, rgba(254,89,52,1) 0%, rgba(252,3,90,1) 100%);
     
     filter: blur(4px);
-    animation: blobAnimation2 5s infinite ease-out;
+    animation: blobAnimation2 12.5s infinite;
 }
 
 @keyframes animScroll {
