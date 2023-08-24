@@ -1,12 +1,12 @@
 #projects {
-    padding: 6rem 3%;
+    padding: 10rem 3%;
 }
 
 .projects-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .project-card {
@@ -93,7 +93,6 @@
 .card-title {
     font-size: 2rem;
 }
-
 
 .card-tags {
     min-width: 2.813rem;
