@@ -2,13 +2,6 @@
 
 var homeEvents = () => {
     getScreenSize();
-
-    VanillaTilt.init(document.querySelector('.home-card'), {
-        max: 2.5,
-        speed: 200,
-        glare: true,
-        "max-glare": 0.1,
-    })
 }
 
 var getScreenSize = () => {
