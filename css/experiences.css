@@ -1,9 +1,3 @@
-#experience {
-    position: relative;
-    padding: 5rem 15%;
-    background-color: var(--snow);
-}
-
 #nav-experience {
     width: 100%;
 }
@@ -14,7 +8,7 @@
     align-items: center;
     border-bottom: solid 2px var(--cadet-gray);
     padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     list-style: none;
 }
 
@@ -40,8 +34,11 @@
     transition: all 350ms ease-out;
 }
 
+.sections-container {
+    width: 100%;
+}
+
 .sections-container .sub-sections {
-    min-height: 20.625rem;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -58,7 +55,7 @@
 
 .experience-title {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .section-content {
@@ -66,51 +63,60 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-}
-
-.timeline, .company-container, .skills-container {
-    width: 75%;
+    gap: 5rem;
 }
 
 .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-}
-
-.checkpoint {
     width: 100%;
+    min-height: 11.25rem;
+    /* width: 75%;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem 3rem; 
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
+    justify-content: center; */
+    position: relative;
 }
 
-.checkpoint-header {
-    display: flex;
-    justify-content: space-between;
+.timeline::before {
+    content: '';
+    width: 0.5rem;
+    height: 100%;
+    border-radius:  5px;
+    position: absolute;
+    top: 0;
+    left: 0.75rem;
+    background-color: var(--dark-purple-2);
 }
 
-.checkpoint-title {
-    font-size: 2rem;
+.timeline-item {
+    width: 100%;
+    padding: 2rem 3rem;
+    position: relative;
 }
 
-.checkpoint-year { 
+.timeline-item::before {
+    content: '';
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    background-color: var(--dark-purple-2);
+}
+
+.timeline-point {
+    margin-bottom: 2rem;
+}
+
+.timeline-point h4 {
+    font-size: 2.5rem;
+}
+
+.timeline-point > span {
     font-weight: 700;
 }
 
-.company-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-}
-
 .company-card {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,14 +139,13 @@
     width: 100%;
     padding: 2rem 3rem;
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
 }
 
 .company-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .company-description {
@@ -148,21 +153,20 @@
 }
 
 .company-description p {
-
     margin-bottom: 0.5rem;
 }
 
 .skills-container {
+    width: 75%;
     padding: 2rem 3rem;
     border-radius: 1rem;
     text-align: center;
     background-color: var(--snow);
-    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
 }
 
 .skills-title {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .skills-list {

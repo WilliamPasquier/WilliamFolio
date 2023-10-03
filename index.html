@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="William Pasquier portfolio.">
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.williampasquier.ch/portfolio/"/>
 
-    <title>William Pasquier </title>
+    <title>William Pasquier - Personal portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Import Favicon -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
+    <!-- Import JavaScript files / libraries -->
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
@@ -15,8 +22,8 @@
     <script type="text/javascript" src="js/experiences.js"></script>
     <script type="text/javascript" src="js/contact.js"></script>
     <script type="text/javascript" src="js/utils.js"></script>
-    <script type="text/javascript" src="js/librairies/vanilla-tilt.js"></script>
 
+    <!-- Import CSS files -->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/variables.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
@@ -39,7 +46,6 @@
                 <li><a class="link-btn active" href="#home">Home</a></li>
                 <li><a class="link-btn" href="#who-am-i">Who am i ?</a></li>
                 <li><a class="link-btn" href="#projects">Projects</a></li>
-                <li><a class="link-btn" href="#experience">Experience</a></li>
                 <li><a class="link-btn" href="#contact">Contact me</a></li>
             </ul>
         </nav>
@@ -78,7 +84,7 @@
                     </div>
                 </a>
             </div>
-            <div class="home-background">
+            <!-- <div class="home-background">
                 <div class="bg1">
                     <svg class="box1" id="triangle1" data-name="triangle1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 60 51.96">
@@ -121,32 +127,89 @@
                     </svg>
                     <div class="blob2"></div>
                 </div>
-            </div>
+            </div> -->
         </section>
         
         <section class="section-container" id="who-am-i">
             <h2 class="who-title">More about me</h2>
             <div class="who-container">
-                <p class="presentation">
-                    Welcome and thank you for visiting my website. Let's talk a little more about me.
-                    My name is William Pasquier, I'm <span id="age-text"></span> and I live in Switzerland. 
-                    I'm currently an IT apprentice specializing in development at an insurance company called <a class="presentation-link" href="https://www.vaudoise.ch/fr/particulier" target="_blank">Vaudoise Assurance</a>. 
-                    This August, I'm starting the final year of my 4-year apprenticeship.
-                    <br />
-                    <br />
-                    During my apprenticeship, I was able to see different facets of the business, such as what a computer is and what it's made of. 
-                    The basics of servers and DNS and how they work. 
-                    Also different Back-end technologies such as basic Java and C#, which I coupled with Frameworks (ASP.NET, Entity Framework Core). 
-                    For the Front-end, I was able to learn and use frameworks such as React and Angular in different projects and exercises, and perfect my use of HTML, CSS and JavaScript / TypeScript. 
-                    I was also tested on database design and modeling (MCD, MLD, MPD). (You can see more on <a class="presentation-link" href="#experience">Experience</a> Section).
-                    <br />
-                    <br />
-                    All the aspects I've listed above are put into practice in my company. 
-                    Every year I have the opportunity to change teams and projects in order to discover multiple aspects of the job as well as collaborate with real colleagues and follow sessions such as Dailies, Refinements or planning.
-                </p>
                 <img class="profile-image" src="/resources/images/icon.png" />
+                <div class="presentation-container">
+                    <p class="presentation medium-font">
+                        Welcome and thank you for visiting my website. Let's talk a little more about me.
+                        My name is William Pasquier, I'm <span id="age-text"></span> and I live in Switzerland. 
+                        I'm currently an IT apprentice specializing in development at an insurance company called <a class="presentation-link" href="https://www.vaudoise.ch/fr/particulier" target="_blank">Vaudoise Assurance</a>. 
+                        This August, I'm starting the final year of my 4-year apprenticeship.
+                        <!-- <br />
+                        <br />
+                        During my apprenticeship, I was able to see different facets of the business, such as what a computer is and what it's made of. 
+                        The basics of servers and DNS and how they work. 
+                        Also different Back-end technologies such as basic Java and C#, which I coupled with Frameworks (ASP.NET, Entity Framework Core). 
+                        For the Front-end, I was able to learn and use frameworks such as React and Angular in different projects and exercises, and perfect my use of HTML, CSS and JavaScript / TypeScript. 
+                        I was also tested on database design and modeling (MCD, MLD, MPD). (You can see more on <a class="presentation-link" href="#experience">Experience</a> Section).
+                        <br />
+                        <br />
+                        All the aspects I've listed above are put into practice in my company. 
+                        Every year I have the opportunity to change teams and projects in order to discover multiple aspects of the job as well as collaborate with real colleagues and follow sessions such as Dailies, Refinements or planning. -->
+                    </p>
+                    <div class="certification-wrapper" id="certification-container">
+                        <div class="certification">
+                            <div class="certification-header">
+                                <h3 class="certification-title"><span class="certification-icon"></span>CFC learning</h3>
+                                <span class="status">In progress</span>
+                            </div>
+                            <div class="certification-content">
+                                <p class="certification-description medium-font">
+                                    Federal Certificate of Capacity (CFC) as a computer scientist specializing in application development
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <nav id="nav-experience">
+                <ul class="tabs-container">
+                    <!--TODO : Create experience section-->
+                    <!-- <li>
+                        <button class="tab active-tab"></span> Experiences</button>
+                    </li> -->
+                    <li>
+                        <button class="tab active-tab">Companies</button>
+                    </li>
+                    <li>
+                        <button class="tab">Skills</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sections-container">
+                <!--TODO : Create experience section-->
+                <!-- <section class="sub-sections active-section" id="timeline">
+                    <h3 class="experience-title">My experiences</h3>
+                    <div class="section-content" id="timeline-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-point">
+                                    <h4>Start my electronics apprenticeship </h4>
+                                    <span class="time medium-font">August 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                
+                <section class="sub-sections active-section" id="company">
+                    <h3 class="experience-title">Companies I worked for</h3>
+                    <div class="section-content" id="companies-content">
+                    </div>
+                </section>
+                
+                <section class="sub-sections" id="skill">
+                    <h3 class="experience-title">My skills</h3>
+                    <div class="section-content" id="skills-content">
+                    </div>
+                </section>
+            </div>
         </section>
 
         <section class="section-container" id="projects">
@@ -155,7 +218,7 @@
             </div>
         </section>
 
-        <section class="section-container" id="experience">
+        <!-- <section class="section-container" id="experience">
             <nav id="nav-experience">
                 <ul class="tabs-container">
                     <li>
@@ -202,7 +265,7 @@
                     </div>
                 </section>
             </div>
-        </section>
+        </section> -->
 
         <section class="section-container" id="contact">
             <h2 class="contact-title">Contact me</h2>
