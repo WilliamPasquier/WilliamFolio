@@ -58,7 +58,7 @@ function createSkills(skillsData) {
         });
 
         skillsContainer.innerHTML += `
-        <div class="skills-container">
+        <div class="skills-container white-box-shadow">
             <h4 class="skills-title">${skill.type}</h4>
             <ul class="skills-list">
                 ${skillList}
@@ -92,7 +92,7 @@ function createCompanies(companiesData) {
                 <a href="${company.link}" target="_blank" rel="noopener noreferrer">
                     <img src="./resources/images/icons/companies/${company.logo}" alt="" class="company-logo">
                 </a>
-                <div class="company-content">
+                <div class="company-content white-box-shadow">
                     <div class="company-header">
                         <h4 class="company-name">${company.companyName}</h4>
                         <span class="years medium-font">${company.startYear} - ${company.endYear}</span>
