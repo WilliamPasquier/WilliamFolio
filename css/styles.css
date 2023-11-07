@@ -126,6 +126,11 @@ footer {
     .medium-font {
         font-size: 1rem;
     }
+
+    footer {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
 }
 
 /* section {
