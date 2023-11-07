@@ -136,7 +136,6 @@
 }
 
 .company-content {
-    width: 100%;
     padding: 2rem 3rem;
     border-radius: 1rem;
 }
@@ -191,10 +190,6 @@
     aspect-ratio: 1;
 }
 
-.skills-list .skill .skill-name {
-    font-size: 1.25rem;
-}
-
 .skills-list .skill .rate-background {
     width: 120px;
     height: 0.5rem;
@@ -208,6 +203,60 @@
     background: linear-gradient(315deg, rgba(155,81,219,1) 0%, rgba(92,49,129,1) 100%);
 }
 
+@media (max-width: 960px) {
+    .tabs-container li .tab {
+        font-size: 1.25rem;
+    }
+
+    .section-content {
+        gap: 2.5rem;
+    }
+
+    .sub-sections h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .company-card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .skills-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .company-card a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-logo {
+        width: 75%;
+    }
+
+    .company-name {
+        font-size: 1.5rem;
+    }
+
+    .skills-list .skill {
+        min-width: 90px;
+        gap: 1rem;
+    }
+    
+    .skills-list .skill .skill-logo {
+        width: 60px;
+        aspect-ratio: 1;
+    }
+    
+    .skills-list .skill .rate-background {
+        width: 90px;
+        height: 0.5rem;
+    }
+}
 
 @keyframes moving {
     from {
