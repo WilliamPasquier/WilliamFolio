@@ -1,6 +1,5 @@
 #projects {
     align-items: center;
-    padding: 10rem 3%;
 }
 
 .projects-container {
@@ -12,7 +11,7 @@
 
 .project-card {
     width: 28rem;
-    min-height: 11rem;
+    min-height: 15rem;
 
     display: flex;
     justify-content: space-between;

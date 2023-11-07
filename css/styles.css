@@ -58,6 +58,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5rem 15%;
 }
 
 .section-container > h2 {
