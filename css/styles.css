@@ -93,8 +93,18 @@ footer {
     background-repeat: no-repeat;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
 }
 
+::-webkit-scrollbar-track {
+    background-color: var(--snow);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-purple-2);
+}
 
 /*@media (max-width: 960px) {
     
