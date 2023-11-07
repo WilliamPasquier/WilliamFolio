@@ -49,7 +49,7 @@ function createSkills(skillsData) {
             skillList += `
             <li class="skill">
                 <img src="./resources/images/icons/skills/${skill.type}/${s.logo}" alt="" class="skill-logo">
-                <p class="skill-name">${s.name}</span></p>
+                <p class="skill-name medium-font">${s.name}</span></p>
                 <div class="rate-background">
                     <div class="rate-bar" style="width: ${s.rate}%;"></div>
                 </div>

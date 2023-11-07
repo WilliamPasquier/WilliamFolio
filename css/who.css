@@ -79,22 +79,12 @@
     height: 360px; 
 }
 
-/*RESPONSIVENESS*/
-/* Tablet device */
 @media (max-width: 960px) {
     .who-container {
-        flex-direction: column;
-    }
-}
-
-/* Mobile device */
-@media (max-width: 640px) { 
-    .who-title {
-        font-size: 2rem;
+        margin-bottom: 2.5rem;
     }
 
-    .profile-image {
-        width: 270px;
-        height: 270px; 
+    .presentation {
+        margin-bottom: 1rem;
     }
 }
