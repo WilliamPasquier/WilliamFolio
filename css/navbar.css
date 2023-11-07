@@ -6,7 +6,7 @@
 
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 9000;
 
     background-color: transparent;
     transition: background-color 350ms ease-out;

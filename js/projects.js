@@ -29,7 +29,7 @@ var createProjects = (data) => {
                 if (j == 3) {
                     projectTags += `
                         <li>
-                            <img class="tag" src="./resources/images/badges/tech/dot.svg" alt="" />
+                            <img class="card-icon" src="./resources/images/badges/tech/dot.svg" alt="" />
                         </li>
                     `;
                     break;
@@ -37,7 +37,7 @@ var createProjects = (data) => {
 
                 projectTags += `
                     <li>
-                        <img class="tag" src="./resources/images/badges/tech/${currentProject.tags[j]}_badge.svg" alt="" />
+                        <img class="card-icon" src="./resources/images/badges/tech/${currentProject.tags[j]}_badge.svg" alt="" />
                     </li>
                 `;
             }
@@ -48,8 +48,8 @@ var createProjects = (data) => {
             <div class="card-content">
                 <div class="card-header">
                     <div class="title-container">
-                        <img class="project-icon" src="${currentProject.icon}" />
-                        <h2 class="card-title bold">${currentProject.title}</h2>
+                        <img class="card-icon project-icon" src="${currentProject.icon}" />
+                        <h3 class="card-title bold">${currentProject.title}</h3>
                     </div>
                     <span class="card-year bold medium-font">${currentProject.year}</span>
                 </div>
@@ -122,7 +122,7 @@ var cardClicked = (id) => {
         <section class="detail-header">
             <div class="detail-nav">
                 <img class="detail-icon" src="${project.icon}" />
-                <h1 class="detail-title">${project.title}</h1>
+                <h3 class="detail-title">${project.title}</h3>
                 ${links}
             </div>
             <button id="close-detail" aria-controls="project-detail" onclick="closeDetail()"></button>
@@ -139,7 +139,7 @@ var cardClicked = (id) => {
             <ul class="detail-tags">
                 ${tags}
             </ul>
-            <span class="detail-type">${project.type}</span>
+            <span class="detail-type medium-font">${project.type}</span>
         </section>
     `;
 

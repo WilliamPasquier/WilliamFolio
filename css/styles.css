@@ -93,16 +93,38 @@ footer {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 960px) {
-    .section-container div {
-        flex-direction: column;
-    }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
 }
 
-/* Mobile device */
+::-webkit-scrollbar-track {
+    background-color: var(--snow);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-purple-2);
+}
+
+/*@media (max-width: 960px) {
+    
+} */
+
 @media (max-width: 640px) { 
-    .section-container h1 {
+    h3 {
+        font-size: 1rem;
+    }
+
+    .section-container {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-container h2 {
         font-size: 2rem;
+    }
+
+    .medium-font {
+        font-size: 1rem;
     }
 }
 
