@@ -114,14 +114,8 @@
     animation-delay: 750ms;
 }
 
-.arrow-down {
-    width: 15px;
-    aspect-ratio: 1;
+.home-arrow {
     display: none;
-    border-right: solid 2px var(--snow);
-    border-bottom: solid 2px var(--snow);
-    border-radius: 3px;
-    transform: rotate(45deg);
 }
 
 @media (max-width: 960px) {
@@ -165,7 +159,7 @@
        display: none;
     }
 
-    .arrow-down {
+    .home-arrow {
         display: block;
     }
 }
