@@ -11,37 +11,178 @@
     <meta property="og:url" content="https://www.williampasquier.ch/portfolio/"/>
 
     <title>William Pasquier - Personal portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Import Favicon -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
-    <script src="js/script.js"></script>
+    <!-- Import JavaScript files / libraries -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/who.js"></script>
+    <script type="text/javascript" src="js/projects.js"></script>
+    <script type="text/javascript" src="js/experiences.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
 
+    <!-- Import CSS files -->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/variables.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/who.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/experiences.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
+    <header class="primary-header flex">
+        <div class="nav-controller">
+            <img src="./resources/images/XL_logo_2_2.png" id="logo-navbar">
+            <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                <!-- <span class="sr-only">Menu</span> -->
+            </button>
+        </div>
+        <nav>
+            <ul class="primary-nav flex-gap" id="primary-nav" data-visible="false">
+                <li><a class="link-btn active" href="#home">Home</a></li>
+                <li><a class="link-btn" href="#who-am-i">Who am i ?</a></li>
+                <li><a class="link-btn" href="#projects">Projects</a></li>
+                <li><a class="link-btn" href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <header>
-            
-        </header>
-        
-        <div id="main-container">
-            <div class="info">
-                <img src="./resources/images/XL_logo_2_2.png" alt="William Pasquier main logo" id="logo-img" class="entry_anim">
-                <div id="text-content" class="entry_anim">
-                    <h1>Website currently in construction</h1>
-                    <p>Please may come back later or contact me on my social media</p>
+        <section id="home">
+            <div class="home-content">
+                <span class="home-name">Hi, I'm<h1 class="name">William Pasquier</h1></span>
+                <div class="welcome-content">
+                    <span>Software</span>
+                    <span>Developer</span>
                 </div>
             </div>
-            <div class="contact entry_anim">
-                <a class="link-button" href="https://github.com/WilliamPasquier" target="_blank">Github</a>
-                <a class="link-button" href="https://twitter.com/WillPasquier" target="_blank">Twitter</a>
-                <a class="link-button" href="https://www.instagram.com/pasquier.william/" target="_blank">Instagram</a>
+            <div class="start-container">
+                <a class="start-button" href="#who-am-i">
+                    Start the visit
+                    <div class="scroll-down">
+                        <span></span>
+                    </div>
+                    <div class="arrow-down home-arrow"></div>
+                </a>
             </div>
-        </div>
+        </section>
+        
+        <section class="section-container" id="who-am-i">
+            <h2 class="who-title">More about me</h2>
+            <div class="who-container">
+                <!-- TODO : Add picture -->
+                <!-- <img class="profile-image" src="/resources/images/icon.png" /> -->
+                <div class="presentation-container">
+                    <p class="presentation medium-font">
+                        Welcome and thank you for visiting my website. Let's talk a little more about me.
+                        My name is William Pasquier, I'm <span id="age-text"></span> and I live in Switzerland. 
+                        I'm currently an IT apprentice specializing in development at an insurance company called <a class="presentation-link" href="https://www.vaudoise.ch/fr/particulier" target="_blank">Vaudoise Assurance</a>. 
+                        This August, I'm starting the final year of my 4-year apprenticeship.
+                        <br />
+                        <br />
+                        During my apprenticeship, I was able to see different facets of the business, such as what a computer is and what it's made of. 
+                        The basics of servers and DNS and how they work. 
+                        Also different Back-end technologies such as basic Java and C#, which I coupled with Frameworks (ASP.NET, Entity Framework Core). 
+                        For the Front-end, I was able to learn and use frameworks such as React and Angular in different projects and exercises, and perfect my use of HTML, CSS and JavaScript / TypeScript. 
+                        I was also tested on database design and modeling (MCD, MLD, MPD). (You can see more on <a class="presentation-link" href="#experience">Experience</a> Section).
+                        <br />
+                        <br />
+                        All the aspects I've listed above are put into practice in my company. 
+                        Every year I have the opportunity to change teams and projects in order to discover multiple aspects of the job as well as collaborate with real colleagues and follow sessions such as Dailies, Refinements or planning.
+                    </p>
+                    <!-- TODO : Add cetification -->
+                    <!-- <div class="certification-wrapper" id="certification-container">
+                        <div class="certification">
+                            <div class="certification-header">
+                                <h3 class="certification-title"><span class="certification-icon"></span>CFC learning</h3>
+                                <span class="status">In progress</span>
+                            </div>
+                            <div class="certification-content">
+                                <p class="certification-description medium-font">
+                                    Federal Certificate of Capacity (CFC) as a computer scientist specializing in application development
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
 
-        <footer>
-            
-        </footer>
+            <nav id="nav-experience">
+                <ul class="tabs-container">
+                    <!--TODO : Create experience section-->
+                    <!-- <li>
+                        <button class="tab active-tab"></span> Experiences</button>
+                    </li> -->
+                    <li>
+                        <button class="tab active-tab">Companies</button>
+                    </li>
+                    <li>
+                        <button class="tab">Skills</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sections-container" id="experience">
+                <!--TODO : Create experience section-->
+                <!-- <section class="sub-sections active-section" id="timeline">
+                    <h3 class="experience-title">My experiences</h3>
+                    <div class="section-content" id="timeline-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-point">
+                                    <h4>Start my electronics apprenticeship </h4>
+                                    <span class="time medium-font">August 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                
+                <section class="sub-sections active-section" id="company">
+                    <h3 class="experience-title">Companies I worked for</h3>
+                    <div class="section-content" id="companies-content">
+                    </div>
+                </section>
+                
+                <section class="sub-sections" id="skill">
+                    <h3 class="experience-title">My skills</h3>
+                    <div class="section-content" id="skills-content">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section-container" id="projects">
+            <h2 class="project-title">Projects i'm proud of</h2>
+            <div class="projects-container">
+            </div>
+        </section>
+
+        <section class="section-container" id="contact">
+            <h2 class="contact-title">Contact me</h2>
+            <div class="links-container">
+                <a href="https://github.com/WilliamPasquier" target="_blank" rel="noopener noreferrer" class="link"><span class="link-icon github"></span>Github</a>
+                <a href="https://twitter.com/WillPasquier" target="_blank" rel="noopener noreferrer" class="link"><span class="link-icon twitter"></span>Twitter</a>
+                <a href="https://discord.gg/nnpda6exjH" target="_blank" rel="noopener noreferrer" class="link"><span class="link-icon discord"></span>Discord</a>
+                <a href="mailto:contact@williampasquier.ch" class="link"><span class="link-icon mail"></span>Mail</a>
+            </div>
+        </section>
     </main>
+
+    <div id="project-detail" aria-expanded="false">
+    </div>
+
+    <footer>
+        <span class="copyright medium-font">© 2023 Website created by William Pasquier</span>
+        <span class="license medium-font">
+            <span class="law-icon"></span>
+            MIT License
+        </span>
+    </footer>
 </body>
 </html>

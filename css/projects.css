@@ -1,0 +1,368 @@
+#projects {
+    align-items: center;
+    padding: 5rem 5%;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.project-card {
+    width: 28rem;
+    min-height: 15rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    position: relative;
+    
+    background-color: var(--dark-purple-2);
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+}
+
+.project-card:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    width: 100%;
+    height: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    background-color: rgba(27, 22, 49, 0.9);
+    border-radius: 1rem;
+    opacity: 0;
+
+    transition: all 0.3s;
+}
+
+.more-text {
+    font-size: 1.5rem;
+}
+
+.more-text img { 
+    width: 25px;
+    aspect-ratio: 1;
+    margin-right: 0.5rem;
+}
+
+.project-card:hover .overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-icon {
+    width: 33px;
+    aspect-ratio: 1;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+.card-tags {
+    min-width: 2.813rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    border-left: solid 1px var(--snow);
+    padding-left: 1rem;
+}
+
+.card-tags li {
+    display: flex;
+    justify-content: center;
+}
+
+.tag {
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 5%;
+
+    inset: 15% 0 0 0;
+    position: fixed;
+    z-index: 9999;
+    
+    background-color: rgba(27, 22, 49, 0.9);
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px var(--snow);
+}
+
+.detail-icon {
+    width: 45px;
+    aspect-ratio: 1;
+}
+
+.detail-title {
+    font-size: 2.5rem;
+}
+
+.detail-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detail-button {
+    display: flex;
+    gap: 1rem;
+}
+
+.detail-button a {
+    width: 24px;
+    aspect-ratio: 1;
+}
+
+.detail-button .repo {
+    background-image: url(../resources/images/icons/github.svg);
+    background-repeat: no-repeat;
+}
+
+.detail-button .demo {
+    background-image: url(../resources/images/icons/play.svg);
+    background-repeat: no-repeat;
+}
+
+#close-detail {
+    width: 2rem;
+    aspect-ratio: 1;
+    border: 0;
+    background-color: transparent;
+    background-image: url(../resources/images/icons/cross-icon-2.svg);
+    background-repeat: no-repeat;
+}
+
+#close-detail:hover {
+    cursor: pointer;
+}
+
+.detail-content {
+    /* max-height: 26.25rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 0 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.image-container img {
+
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem 0 rgba( 0, 0, 0, 0.6 );
+}
+
+.detail-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-top: solid 1px var(--snow); 
+}
+
+.detail-tags {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.detail-tag {
+    width: 45px;
+    aspect-ratio: 1;
+}
+
+#project-detail[aria-expanded="false"] {
+    transform: translateY(100%);
+    box-shadow: none;
+    transition: transform 350ms ease-out;
+}
+
+#project-detail[aria-expanded="true"] {
+    transform: translateY(0%);
+    transition: transform 350ms ease-out;
+}
+
+
+@media (max-width: 960px) {
+    #project-detail {
+        inset: 0 0 0 0;
+    }
+
+    .detail-header {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .detail-icon {
+        display: none;
+    }
+
+    .detail-title {
+        font-size: 1.5rem;
+    }
+
+    .detail-button a {
+        width: 21px;
+        aspect-ratio: 1;
+    }
+
+    #close-detail {
+        width: 1.5rem;
+        aspect-ratio: 1;
+    }
+
+    .detail-content {
+        flex-direction: column;
+        overflow-y: scroll;
+        gap: 1rem;
+    }
+
+    .image-container img { 
+        width: 100%;
+    }
+
+    .description-container {
+        width: 100%;
+    }
+
+    .detail-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    .detail-tags {
+        gap: 1rem;
+    }
+
+    .detail-tag {
+        width: 24px;
+        aspect-ratio: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .project-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card-header {
+        flex-direction: column-reverse;
+    }
+
+    .title-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-icon {
+        display: none;
+    }
+
+    .card-content {
+        padding: 0 0 1rem 0;
+        margin: 0 0 0.5rem 0;
+        gap: 0.5rem;
+    }
+
+    .card-tags {
+        flex-direction: row;
+        padding: 1rem 0 0 0;
+        border-top: 1px solid var(--snow);
+        border-left: 0;
+    }
+
+    .tag {
+        width: 27px;
+        aspect-ratio: 1;
+    }
+
+    .more-text {
+        font-size: 1.25rem;
+    }
+    
+    .more-text img { 
+        width: 21px;
+        aspect-ratio: 1;
+        margin-right: 0.5rem;
+    }
+}
+
+@supports (backdrop-filter: blur(6px)) {
+    #project-detail {
+        backdrop-filter: blur(6px);
+    }
+    
+    .overlay {
+        backdrop-filter: blur(6px);
+    }
+}

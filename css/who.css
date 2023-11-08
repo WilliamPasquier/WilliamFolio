@@ -1,0 +1,90 @@
+#who-am-i {
+    background-color: var(--snow);
+}
+
+.who-title {
+    color: var(--dark-purple-2);
+}
+
+.who-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.certification-wrapper {
+    max-width: 100%;
+    display: flex;
+}
+
+.certification {
+    width: 26.25rem;
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba( 0, 0, 0, 0.3 );
+}
+
+.certification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certification-title {
+    display: flex;
+    color: var(--dark-purple-2);
+    font-size: 1.5rem;
+}
+
+.certification-icon {
+    width: 24px;
+    aspect-ratio: 1;
+    display: block;
+    margin-right: 0.5rem;
+    background-image: url(../resources/images/icons/certification-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.status {
+    color: var(--dark-purple-2);
+    font-weight: 700;
+}
+
+.certification-description {
+    color: var(--dark-purple-2);
+}
+
+.presentation {
+    color: var(--dark-purple-2);
+    margin-bottom: 3rem;
+}
+
+.presentation #age-text {
+    color: var(--dark-purple-2);
+}
+
+.presentation .presentation-link {
+    color: var(--veronica);
+    text-decoration: none;
+}
+
+.profile-image {
+    width: 360px;
+    height: 360px; 
+}
+
+@media (max-width: 960px) {
+    .who-container {
+        margin-bottom: 2.5rem;
+    }
+
+    .presentation {
+        margin-bottom: 1rem;
+    }
+}

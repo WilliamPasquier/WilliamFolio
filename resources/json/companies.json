@@ -1,0 +1,37 @@
+[
+    {
+        "companyName": "ETML",
+        "startYear" : 2018,
+        "endYear": 2019,
+        "logo": "etml-logo.png",
+        "description": 
+        [
+            "The Ecole Technique - Ecole des Métiers de Lausanne (ETML) is a state-run vocational and trade school that trains young people on a dual basis in theoretical vocational courses and full-time in practical and theoretical disciplines.",
+            "I entered the electronics training program, but unfortunately left after my 1st year due to a lack of interest in the field."
+        ],
+        "link": "https://www.etml.ch/"
+    },
+    {
+        "companyName": "SeMo",
+        "startYear" : 2019,
+        "endYear": 2020,
+        "logo": "semo-logo.png",
+        "description": 
+        [
+            "SeMo is a transitional measure to prepare for vocational training. It was initiated by SECO (the Swiss Secretariat for Economic Affairs) and is subsidized by the Employment Service through the Unemployment Insurance scheme."
+        ],
+        "link": "https://semochablais.ch/home.php"
+    },
+    {
+        "companyName": "Vaudoise Assurance SA",
+        "startYear" : 2020,
+        "endYear": "now",
+        "logo": "va-logo.png",
+        "description": 
+        [
+            "Founded in Lausanne in 1895, Vaudoise is one of Switzerland's ten leading private insurance companies. Vaudoise is the only independent private insurer whose decision-making center is based in French-speaking Switzerland. It operates in the Swiss insurance and pensions market through around one hundred general and local agencies.",
+            "I joined Vaudoise Assurance to complete my 4-year dual apprenticeship in IT. "
+        ],
+        "link": "https://www.vaudoise.ch/fr/particulier"
+    }
+]
