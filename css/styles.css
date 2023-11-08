@@ -70,6 +70,16 @@ main {
     font-size: 1.25rem;
 }
 
+.arrow-down {
+    width: 15px;
+    aspect-ratio: 1;
+    display: block;
+    border-right: solid 3px var(--snow);
+    border-bottom: solid 3px var(--snow);
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+
 footer {
     height: 5.625rem;
     display: flex;
