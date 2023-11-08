@@ -46,9 +46,15 @@ function createSkills(skillsData) {
         let skillList = '';
         
         skill.skills.forEach(s => {
+            var type = skill.type;
+
+            if(type.indexOf(' ') > 0){
+                type = type.replace(/\s/g, '_');
+            }
+
             skillList += `
             <li class="skill">
-                <img src="./resources/images/icons/skills/${skill.type}/${s.logo}" alt="" class="skill-logo">
+                <img src="./resources/images/icons/skills/${type}/${s.logo}" alt="" class="skill-logo">
                 <p class="skill-name medium-font">${s.name}</span></p>
                 <div class="rate-background">
                     <div class="rate-bar" style="width: ${s.rate}%;"></div>
